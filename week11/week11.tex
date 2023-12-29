@@ -1,0 +1,92 @@
+\documentclass[14pt]{exam}
+
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{Differential Equations. Week 11}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	Draw the trajectories and deduce properties of the solutions as $t\to\infty$:
+	
+	\begin{questions}
+		\question
+		(Filippov 1001) 
+		$\ddot{x} + 4x = 0$
+		
+		\question
+		(Filippov 1003)
+		$\ddot{x} -x + x^2 = 0$
+		
+		\question
+		(Filippov 1009)
+		$\ddot{x} - \sin x = 0$
+		
+		\question
+		(Filippov 1015)
+		$\ddot{x} + \dot{x} + 2x - x^2 = 0$
+	\end{questions}
+	
+	Draw trajectories and investigate singular points:
+	\begin{questions}
+		\setcounter{question}{4}
+		
+		\question
+		(Filippov 1021)
+		$\begin{cases}
+			\dot{x} = 2x + y^2 - 1\\
+			\dot{y} = 6x - y^2 + 1
+		\end{cases}$
+		
+		\question
+		(Filippov 1025)
+		$\begin{cases}
+			\dot{x} = 2 + y - x^2\\
+			\dot{y} = 2x(x - y)
+		\end{cases}$
+		
+		\question
+		(Filippov 1031)
+		$\begin{cases}
+			\dot{x} = (2x - y)^2 - 9\\
+			\dot{y} = (x - 2y)^2 - 9
+		\end{cases}$
+		
+		\question
+		(FitzHugh-Nagumo neuron model)
+		
+		$\begin{cases}
+			\dot{V} = V - \frac{V^3}{3} - w + I\\
+			\tau\dot{w} = V - a - bw
+		\end{cases}$,
+		$a = -0.7$, $b = 0.8$, $\tau = \frac{1}{0.08}$, $I$ - external current.
+		
+		\question
+		Derive an equation for movement of pendulum under
+		external force, which equals to one half of the pendulum
+		weight and directed clockwise on a tangent to the circus
+		of the pendulum motion. Draw trajectories of the motion
+		and explain their type.
+		
+		\question
+		Draw on a phase plane small oscillations of a pendulum,
+		considering the pendulum length during upward
+		movement is $l$ and the pendulum length during downward
+		movement is $L$, where $L > l$. Define a change of
+		amplitude after one oscillation.
+	\end{questions}
+	
+	\textbf{Homework:} Filippov 1014, 1026.
+	
+	Draw trajectories and investigate singular points for Hindmarsh-Rose model of neuron activity:
+	
+	$
+	\begin{cases}
+		\dot{x} = y + 3x^2 - x^3 - z + I\\
+		\dot{y} = 1 - 5x^2 - y\\
+		\dot{z} = r(4(x + \frac{8}{5}) - z)
+	\end{cases}
+	$, $r = \sqrt{x^2 + y^2 + z^2} \approx 0.01$, $I$ - external current.
+\end{document}

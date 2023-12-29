@@ -1,0 +1,94 @@
+\documentclass[14pt]{exam}
+
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{Differential Equations. Week 12}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	Using the definition of Lyapunov stability determine whether the solution of initial value problem is stable.
+	
+	\begin{questions}
+		\question
+		(Filippov 881a)
+		$3(t - 1)\dot{x} = x$, $x(2) = 0$.
+		
+		\question
+		(Filippov 881b)
+		$\dot{x} = 4x - t^2x$, $x(0) = 0$.
+		
+		\question
+		(Filippov 881c)
+		$\dot{x} = t - x$, $x(0) = 1$.
+	\end{questions}
+	
+	Determine if the trivial solution of the system is stable.
+	
+	\begin{questions}
+		\setcounter{question}{3}
+		\question
+		(Filippov 890)
+		$x = C_1\cos^2t - C_2e^{-t}$, $y = C_1t^4e^{-t} + 2C_2$.
+		
+		\question
+		(Filippov 891)
+		$x = \frac{C_1 - C_2 t}{1 + t^2}$, $y = (C_1t^3 + C_2)e^{-t}$.
+	\end{questions}
+	
+	Using the first Lyapunov theorem determine the stability of the trivial solution ($x = y = z = 0$).
+	
+	\begin{questions}
+		\setcounter{question}{5}
+		\question
+		(Filippov 901)
+		$\begin{cases}
+			\dot{x} = e^{x+2y} - \cos{3x}\\
+			\dot{y} = \sqrt{4+8x} - 2 e^y
+		\end{cases}$
+		
+		\question
+		(Filippov 903)
+		$\begin{cases}
+			\dot{x} = \ln({3e^y - 2\cos x})\\
+			\dot{y} = 2e^x - \sqrt[3]{8 + 12y}
+		\end{cases}$
+		
+		\question
+		(Filippov 905)
+		$\begin{cases}
+			\dot{x} = \tan(z - y) - 2x\\
+			\dot{y} = \sqrt{9+12x} - 3e^y\\
+			\dot{z} = -3y
+		\end{cases}$
+	\end{questions}
+	
+	Determine the stability of the system given in a polar coordinates:
+	\begin{questions}
+		\setcounter{question}{8}
+		\question
+		(Filippov 1040)
+		$\begin{cases}
+			\dot{r} = r(1 - r^2)\\
+			\dot{\phi} = 1\\
+		\end{cases}$
+		
+		\question
+		(Filippov 1042)
+		$\begin{cases}
+			\dot{r} = r(1 - r)^2\\
+			\dot{\phi} = 1
+		\end{cases}$
+		
+		\question
+		(Filippov 1043)
+		$\begin{cases}
+			\dot{r} = \sin r\\
+			\dot{\phi} = 1
+		\end{cases}$
+	\end{questions}
+	
+	\textbf{Homework:} Filippov 1045, 906.
+\end{document}

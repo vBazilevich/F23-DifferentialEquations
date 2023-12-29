@@ -1,0 +1,72 @@
+\documentclass[14pt]{exam}
+
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{Differential Equations. Week 13}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	Using Lyapunov's function and Lyapunov's or Chetaev's theorems check the stability of a system at the origin.
+	
+	\begin{questions}
+		\question
+		(Filippov 923)
+		$
+		\begin{cases}
+			\dot{x} = x^3 - y\\
+			\dot{y} = x + y^3
+		\end{cases}
+		$
+		
+		\question
+		(Filippov 924)
+		$
+		\begin{cases}
+			\dot{x} = y - x + xy\\
+			\dot{y} = x - y - x^2 - y^3
+		\end{cases}
+		$
+		
+		\question
+		(Filippov 925)
+		$
+		\begin{cases}
+			\dot{x} = 2y^3 - x^5\\
+			\dot{y} = -x - y^3 + y^5
+		\end{cases}
+		$
+		
+		\question
+		(Filippov 927)
+		$
+		\begin{cases}
+			\dot{x} = y - 3x - x^3\\
+			\dot{y} = 6x - 2y
+		\end{cases}
+		$
+	\end{questions}
+	
+	Check the stability of the system $\ddot{x} + p(t)x = 0$  for a given $a$ and $b$ at the origin, where 
+	
+	$p(t) =  \begin{cases}
+		a^2,\, 2\pi k < t < 2\pi k + \pi \\
+		b^2,\, 2\pi k + \pi \leq t \leq 2\pi k + 2\pi
+	\end{cases}$, $k\in\mathrm{Z}$.
+	
+	\begin{questions}
+		\setcounter{question}{4}
+		\question
+		(Filippov 959 (1)) $a = 0.5$, $b = 0$.
+		
+		\question
+		(Filippov 959 (3)) $a = 0.5$, $b = 1.5$.
+		
+		\question
+		(Filippov 959 (5)) $a = 1$, $b = 0$.
+	\end{questions}
+	
+	\textbf{Homework:} Filippov 929, 959(2).
+\end{document}
